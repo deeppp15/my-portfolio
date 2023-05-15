@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="header">
         <Link to="/">
-            <h1>Portfolio</h1>         
+            <h1>Deep Vora</h1>         
             </Link>
             <ul className={click?"nav-menu active":"nav-menu"}>
                 <li>
