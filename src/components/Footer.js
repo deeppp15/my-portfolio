@@ -1,5 +1,6 @@
 import "./FooterStyles.css"
 import {FaGithub, 
+        FaHackerrank, 
         FaHome, 
         FaLinkedin, 
         FaMailBulk, 
@@ -45,17 +46,19 @@ function Footer() {
                 <h4> About myself </h4>
                 <p> I am a Computer Science Student studying in george mason university.</p>
                 <div className="social">
-                    <FaTwitter size={30} style={{
+                <a href="https://www.hackerrank.com/voradeep15/">
+                    <FaHackerrank size={30} style={{
                         color:"#fff", marginRight:"1rem"
-                    }} />
-
+                    }} /></a>
+                    <a href="https://www.linkedin.com/in/deep-vora15/">
                     <FaLinkedin size={30} style={{
                         color:"#fff", marginRight:"1rem"
-                    }} />
-
+                    }} /></a>
+                     <a href="https://github.com/deeppp15">
                     <FaGithub size={30} style={{
-                        color:"#fff", marginRight:"1rem"
-                    }} />
+                        color:"#fff", marginRight:"1rem",
+                        
+                    }} /></a>
                 </div>
             </div>
         
