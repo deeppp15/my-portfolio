@@ -4,7 +4,7 @@ import "./WorkCardStyles.css"
 import React from 'react'
 import dataImg from "../assets/dataMining.png"
 import { NavLink } from "react-router-dom"
-function WorkCard() {
+const WorkCard =() =>{
   return (
     <div className="=work-container">
         <h1 className="project-heading">Projects</h1>
@@ -15,8 +15,10 @@ function WorkCard() {
                 <div className="pro-details">
                   <p> These are the Projects </p>
                     <div className="pro-btns">
-                      <NavLink to="www.google.com" className="btn">View</NavLink>
-                      <NavLink to="www.google.com" className="btn">Source</NavLink>
+                      <NavLink to="www.google.com" 
+                      className="btn">View</NavLink>
+                      <NavLink to="www.google.com" 
+                      className="btn">Source</NavLink>
 
                     </div>
                 </div>
