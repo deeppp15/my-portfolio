@@ -2,23 +2,27 @@ import "./HeroImgStyles.css"
 import React from 'react'
 import IntroImg from "../assets/intro-bg.jpg"
 import {Link} from "react-router-dom"
+import { useTypingEffect } from "../hooks/typing-effect"
+
 
 const HeroImg = () => {
+    const myh = useTypingEffect("Fullstack Developer.", 100);
   return <div className='hero'>
-    <div className="mask">
-    <img className="into-img"
-    src={IntroImg} alt="IntroImg"/>
-    </div>
-    <div className="content">
-        <p>Hi, I am student.</p>
-        <h1>Fullstack Developer.</h1>
-    <div>
-    <Link to="/project"  className="btn">Projects </Link>
-    <Link to="/contact"  className="btn btn-light .btn-hover">Contact</Link>
-</div>
-    </div>
+        <div className="mask">
+            <img className="into-img"
+            src={IntroImg} alt="IntroImg"/>
+        </div>
+        
+        <div className="content">
+            <p>Hi, I am a</p>
+            <h1> {myh}</h1>
+            <div>
+                <Link to="/project"  className="btn">Projects </Link>
+                <Link to="/contact"  className="btn btn-light .btn-hover">Contact</Link>
+            </div>
+        </div>
     </div>
  
 }
 
-export default HeroImg
+export default HeroImg;
