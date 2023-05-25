@@ -4,8 +4,7 @@ import {FaGithub,
         FaHome, 
         FaLinkedin, 
         FaMailBulk, 
-        FaPhone, 
-        FaTwitter} 
+        FaPhone} 
     from "react-icons/fa";
 
 import React from 'react'
