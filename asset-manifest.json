@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.499b70c8.css",
+    "main.js": "/my-portfolio/static/js/main.1dbcfff9.js",
+    "static/media/intro-bg.jpg": "/my-portfolio/static/media/intro-bg.4a535b37d5d256792517.jpg",
+    "static/media/me.jpeg": "/my-portfolio/static/media/me.c8e6c68f741d6e4df4e6.jpeg",
+    "static/media/gmu.jpg": "/my-portfolio/static/media/gmu.c49aa8a8864632ce1d8a.jpg",
+    "static/media/dataMining.png": "/my-portfolio/static/media/dataMining.d3e24086f0c49c7d359c.png",
+    "static/media/company.jpeg": "/my-portfolio/static/media/company.75873a928ed764e739f7.jpeg",
+    "static/media/LoyaltyFirst.png": "/my-portfolio/static/media/LoyaltyFirst.a5bdb0a1939ff71cfd39.png",
+    "static/media/gmu.jpeg": "/my-portfolio/static/media/gmu.8e8a274ef22336f2d12e.jpeg",
+    "static/media/university_of_Mumbai.jpg": "/my-portfolio/static/media/university_of_Mumbai.7ffed7131554f25b730f.jpg",
+    "static/media/monopoly.avif": "/my-portfolio/static/media/monopoly.2f9ec8f6eaee0d0d190d.avif",
+    "index.html": "/my-portfolio/index.html",
+    "main.499b70c8.css.map": "/my-portfolio/static/css/main.499b70c8.css.map",
+    "main.1dbcfff9.js.map": "/my-portfolio/static/js/main.1dbcfff9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.499b70c8.css",
+    "static/js/main.1dbcfff9.js"
+  ]
+}
