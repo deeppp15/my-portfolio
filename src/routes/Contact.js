@@ -6,7 +6,7 @@ import  Form  from '../components/Form'
 
 const Contact = () => {
   return (
-    <div>Contact
+    <div>
       <Navbar/>
       <HeroImgProj heading="Contact" text="Let's have a chat."/>
       <Form/>

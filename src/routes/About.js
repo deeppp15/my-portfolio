@@ -6,7 +6,7 @@ import AboutContent from '../components/AboutContent'
 
 const About = () => {
   return (
-    <div>About
+    <div>
         <Navbar/>
         <HeroImgProj heading="ABOUT" text="I am a Developer."/>
         <AboutContent/>
