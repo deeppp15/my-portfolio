@@ -11,21 +11,21 @@ const Navbar = () => {
 
   return (
     <div className="header">
-        <Link to="/">
+        <Link to="/my-portfolio">
             <h1>Deep Vora</h1>         
             </Link>
             <ul className={click?"nav-menu active":"nav-menu"}>
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/my-portfolio">Home</Link>
                 </li>
                 <li>
-                    <Link to="/project">Project</Link>
+                    <Link to="/my-portfolio/project">Project</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/my-portfolio/about">About</Link>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/my-portfolio/contact">Contact</Link>
                 </li>
             </ul>
             <div className="hamburger" onclick={handleClick}>
