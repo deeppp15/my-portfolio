@@ -5,9 +5,9 @@ const ProjectCardData=[
     {
         imgsrc:dataMiningImg,
         title:"Data Mining Basics",
-        text:"Basic Data mining algorithms implemented in python and pandas. (Logistic Regression, Adaboost with Decision Stump, K Means Clustering).  Cost Sensitive learning based project (Sk-learn).",
-        view:"www.google.com",
-        src:"www.google.com"
+        text:"Basic Data mining algorithms implemented in python and pandas. (Logistic Regression, Adaboost with Decision Stump, K Means Clustering).  Cost Sensitive learning based project (Sk-learn) (Comming Soon...)",
+        view:"",
+        src:""
     },
     {
         imgsrc:monopolyImg,
