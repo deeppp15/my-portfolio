@@ -7,7 +7,7 @@ import {FaGithub,
         FaPhone} 
     from "react-icons/fa";
 
-import React from 'react'
+import React from 'react';
 
 
 function Footer() {

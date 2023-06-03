@@ -3,6 +3,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Project from "./routes/Project";
 import Contact from "./routes/Contact";
+import DataMining  from "./routes/DataMining";
 import { Route, Routes } from "react-router-dom";
 
 //Parent file of Project
@@ -17,6 +18,7 @@ function App() {
     <Route path="/my-portfolio/project" element={<Project />} />/** Add address and path  */
     <Route path="/my-portfolio/about" element={<About />} />/** Add address and path  */
     <Route path="/my-portfolio/contact" element={<Contact />} />/** Add address and path  */
+    <Route path="/my-portfolio/dataMining" element={<DataMining />} />
    </Routes>
    </>
   );
