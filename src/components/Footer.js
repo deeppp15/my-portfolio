@@ -4,9 +4,10 @@ import {FaGithub,
         FaHome, 
         FaLinkedin, 
         FaMailBulk, 
-        FaPhone} 
+        FaPhone,
+        FaFileDownload} 
     from "react-icons/fa";
-
+import pdf from "../assets/Resume.pdf"
 import React from 'react';
 
 
@@ -55,6 +56,11 @@ function Footer() {
                     }} /></a>
                      <a href="https://github.com/deeppp15">
                     <FaGithub size={30} style={{
+                        color:"#fff", marginRight:"1rem",
+                        
+                    }} /></a>
+                    <a href={pdf} download="Deep_Vora_Resume.pdf">
+                    <FaFileDownload size={30} style={{
                         color:"#fff", marginRight:"1rem",
                         
                     }} /></a>
