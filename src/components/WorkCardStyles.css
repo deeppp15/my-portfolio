@@ -44,10 +44,16 @@ height: 200px;
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0;
+  
 }
 
 .pro-btns .btn{
-padding:0.5rem 1rem;
+    position:static;
+    height: 2.5rem;
+    width: 20rem;
+    padding:0.5rem 1rem;
+    text-align:center;
+    margin: 0;
 }
 
 @media screen and(max-width:740px){
