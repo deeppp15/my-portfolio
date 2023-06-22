@@ -13,7 +13,7 @@ function ExperienceCard() {
            
            
         <div className="card" >
-                <div className="card-left">
+                <div className="card-child">
                 <h2>George Mason University</h2>
                 
                 <p className="date">August, 2022 - Present</p>
@@ -30,8 +30,8 @@ function ExperienceCard() {
                     </div>
          
                 </div>
-                <div className="card-right">
-                    <img className="card-right-img"src={gmuImg} alt="Company Logo" />
+                <div className="card-child">
+                    <img className="card-img"src={gmuImg} alt="Company Logo" />
                 </div>
             </div>
            
@@ -39,7 +39,11 @@ function ExperienceCard() {
            
            
             <div className="card" >
-                <div className="card-left">
+                <div className="card-child">
+                    <img  className="card-img" src={cmpImg} alt="Company Logo" />
+                </div>
+
+                <div className="card-child">
                 <h2>Bitwise Pvt Limited</h2>
                 
                 <p className="date">Feb, 2021 - Aug, 2023</p>
@@ -60,14 +64,11 @@ function ExperienceCard() {
                     </div>
          
                 </div>
-                <div className="card-right">
-                    <img  className="card-right-img" src={cmpImg} alt="Company Logo" />
-                </div>
             </div>
 
 
             <div className="card" >
-                <div className="card-left">
+                <div className="card-child">
                 <h2>University Of Mumbai</h2>
                 
                 <p className="date">August, 2016 - February, 2021</p>
@@ -88,8 +89,8 @@ function ExperienceCard() {
                     </div>
          
                 </div>
-                <div className="card-right">
-                    <img  className="card-right-img" src={unimum} alt="Company Logo" />
+                <div className="card-child">
+                    <img  className="card-img" src={unimum} alt="Company Logo" />
                 </div>
             </div>
 

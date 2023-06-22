@@ -57,6 +57,7 @@
 }
 
 @media screen and (max-width: 640px){
+    
     .project-container{
         max-width: 90%;
         margin: auto;

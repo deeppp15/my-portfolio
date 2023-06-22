@@ -22,7 +22,7 @@
     display: none;
 }
 
-@media screen and (max-width:140px){
+@media screen and (max-width:640px){
     .nav-menu{
         flex-direction:column;
         justify-content: center;
