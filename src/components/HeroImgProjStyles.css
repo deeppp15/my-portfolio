@@ -42,5 +42,13 @@
         font-size:2rem;
     }
 
+    .hero-img h1{
+        font-size:3rem;
+    }
+    
+    .hero-img p{
+        font-size:1.4rem;
+        
+    }
 
 }

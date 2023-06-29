@@ -12,7 +12,7 @@ const ProjectCardData=[
         imgsrc:monopolyImg,
         title:"Monopoly Game",
         text:"CLI based Secure multiplayer Monopoly game with session management, iterative salted password hashing, rest calls, TLS (SSL) implemented in Fast Api python, HTML & CSS and Javascript.",
-        view:"https://github.com/somethingdevs/secure-mini-mono"
+        view:"https://github.com/deeppp15/secure-mini-mono"
     },  
     {
         imgsrc:loyaltyFirst,
