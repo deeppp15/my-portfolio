@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.25dd7a00.css",
-    "main.js": "/my-portfolio/static/js/main.b4d19aca.js",
+    "main.css": "/my-portfolio/static/css/main.7e09dc9d.css",
+    "main.js": "/my-portfolio/static/js/main.f3dc9992.js",
     "static/media/intro-bg.jpg": "/my-portfolio/static/media/intro-bg.4a535b37d5d256792517.jpg",
     "static/media/me.jpeg": "/my-portfolio/static/media/me.c8e6c68f741d6e4df4e6.jpeg",
     "static/media/gmu.jpg": "/my-portfolio/static/media/gmu.c49aa8a8864632ce1d8a.jpg",
@@ -13,11 +13,11 @@
     "static/media/university_of_Mumbai.jpg": "/my-portfolio/static/media/university_of_Mumbai.7ffed7131554f25b730f.jpg",
     "static/media/monopoly.avif": "/my-portfolio/static/media/monopoly.2f9ec8f6eaee0d0d190d.avif",
     "index.html": "/my-portfolio/index.html",
-    "main.25dd7a00.css.map": "/my-portfolio/static/css/main.25dd7a00.css.map",
-    "main.b4d19aca.js.map": "/my-portfolio/static/js/main.b4d19aca.js.map"
+    "main.7e09dc9d.css.map": "/my-portfolio/static/css/main.7e09dc9d.css.map",
+    "main.f3dc9992.js.map": "/my-portfolio/static/js/main.f3dc9992.js.map"
   },
   "entrypoints": [
-    "static/css/main.25dd7a00.css",
-    "static/js/main.b4d19aca.js"
+    "static/css/main.7e09dc9d.css",
+    "static/js/main.f3dc9992.js"
   ]
 }
