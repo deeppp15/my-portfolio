@@ -9,6 +9,7 @@ const Navbar = () => {
     
     const[click,setClick]= useState(false);
     const handleClick = () => {
+        console.log("click value is :- ", click);
         setClick(!click);
     };
 
@@ -42,7 +43,7 @@ const Navbar = () => {
                     <Link to="/my-portfolio/contact">Contact</Link>
                 </li>
             </ul>
-            <div className="hamburger" onclick={handleClick}>
+            <div className="hamburger" onClick={handleClick}>
             {click ? ( <FaTimes size={20} style={{ color: "#fff" }} />):
             (<FaBars size={20} style={{ color: "#fff" }} />)}
             </div>

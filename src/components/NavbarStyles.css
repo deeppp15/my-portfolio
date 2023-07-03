@@ -46,7 +46,14 @@
         z-index:-3;
         transition:0.3s;
     }
+    .nav-menu li{
+        padding:1rem 0;
+    }
 
+    .nav-menu li a{
+        font-size:2rem;
+        font-weight: 500;
+    }
     .nav-menu.active{
         left:0;
     }

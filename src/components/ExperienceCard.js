@@ -1,9 +1,9 @@
 //import { Link } from "react-router-dom";
 import "./ExperienceCard.css";
 import React from 'react';
-import cmpImg from "../assets/company.jpeg"
-import gmuImg from "../assets/gmu.jpg"
-import unimum from "../assets/university_of_Mumbai.jpg"
+import cmpImg from "../assets/company.jpeg";
+import gmuImg from "../assets/gmu.jpg";
+import unimum from "../assets/university_of_Mumbai.jpg";
 //Divide it into two pars one info and other images slideshow
 function ExperienceCard() {
   return (
@@ -13,7 +13,7 @@ function ExperienceCard() {
            
            
         <div className="card" >
-                <div className="card-child">
+                <div className="card-child ">
                 <h2>George Mason University</h2>
                 
                 <p className="date">August, 2022 - Present</p>

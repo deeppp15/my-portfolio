@@ -6,7 +6,8 @@ import { useTypingEffect } from "../hooks/typing-effect"
 
 
 const HeroImg = () => {
-    const myh = useTypingEffect("Fullstack Developer.", 100);
+    
+    const myh = useTypingEffect("ullstack Developer.", 100);
   return <div className='hero'>
         <div className="mask">
             <img className="into-img"
@@ -15,8 +16,8 @@ const HeroImg = () => {
         
         <div className="content">
             <p>Hi, I am a</p>
-            <h1> {myh}</h1>
-            <div>
+            <h1> F{myh}</h1>
+            <div >
                 <Link to="/my-portfolio/project"  className="btn">Projects </Link>
                 <Link to="/my-portfolio/contact"  className="btn btn-light .btn-hover">Contact</Link>
             </div>

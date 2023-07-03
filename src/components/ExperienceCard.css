@@ -18,7 +18,7 @@
 }
 
 .card{
-    background: #1a1919;
+   
     color:#eee;
     text-align:center;
     padding: 2rem;
@@ -37,9 +37,7 @@
    padding-right: 1rem;
 }
 
-.card:hover{
-    background-color: #141414;
-}
+
 
 .card h3{
     font-size:1.4rem;
@@ -112,6 +110,7 @@ ul {
 
 
  .card-img{
+        
         width:60rem;
         height:35rem;
         opacity: 1;
@@ -119,37 +118,39 @@ ul {
    
 }
 
+
+
 @media screen and (max-width:640px){
 
-    .exp-container{
-
-        grid-template-columns: repeat(1,1fr);
-    }   
-    .card{
+    .exp-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .card {
         background: #1a1919;
-        color:#eee;
-        text-align:left;
+        color: #eee;
+        text-align: left;
         padding: 2rem;
         height: auto;
         width: auto;
-        position:relative;
+        position: relative;
         align-items: left;
-        display:flex;
+        display: flex;
         flex-direction: column;
     }
-   
-    .card-child{
-        height:min-content;
-        flex :1;
+    
+    .card-child {
+        height: min-content;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;
         padding-right: 1rem;
-     }
-
-     .card-img{
-       
+    }
+    
+    .card-img {
         opacity: 1;
-        object-fit:contain; 
-   
-}
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+    }
+    
 }
