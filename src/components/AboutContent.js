@@ -9,7 +9,7 @@ const AboutContent = ()=> {
   return (
     <div className="about">
       <div className="left">
-        <h1>Who am I?</h1>
+        <h1>Who am I ?</h1>
         <p>I am a dedicated and enthusiastic individual with a strong foundation in programming languages and a diverse skill set in tools and frameworks. I am eager to leverage my skills and expand my knowledge in the field of computer science. Apart from my technical background you will find me watching re runs of The Office and ocassionally playing Valorant.</p>
         <Link to="/my-portfolio/contact">
           <button className="btn">Contact</button>
