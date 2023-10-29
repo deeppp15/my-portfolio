@@ -1,0 +1,22 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Email Secrets
+        uses: actions/checkout@v2
+
+      - name: Build and deploy
+        env:
+          REACT_APP_SERVICE_NAME: ${{ secrets.REACT_APP_SERVICE_NAME }}
+          REACT_APP_EMAIL_TEMPLATE_ID: ${{ secrets.REACT_APP_EMAIL_TEMPLATE_ID }}
+          REACT_APP_PUBLIC_KEY: ${{ secrets.REACT_APP_PUBLIC_KEY }}
+        run:
+          npm run deploy
