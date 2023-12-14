@@ -39,7 +39,6 @@ const Form = () => {
     
           });
         
-        alert("Message sent"); 
         navigate('/my-portfolio');
     }else{
             alert("Message could not be sent"); 
