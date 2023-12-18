@@ -1,6 +1,6 @@
-import dataMiningImg from "../assets/dataMining.png"
-import monopolyImg from "../assets/monopoly.avif"
-import loyaltyFirst from "../assets/LoyaltyFirst.png"
+import dataMiningImg from "../../assets/dataMining.png"
+import monopolyImg from "../../assets/monopoly.avif"
+import loyaltyFirst from "../../assets/LoyaltyFirst.png"
 const ProjectCardData=[
     {
         imgsrc:dataMiningImg,

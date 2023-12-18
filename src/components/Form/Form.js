@@ -3,6 +3,7 @@ import "./FormStyles.css";
 import React, { Link,useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import {useNavigate} from 'react-router-dom';
+import { Reveal } from "../Utils/Reveal.tsx";
 
 const SERVICE=process.env.REACT_APP_SERVICE_NAME;
 const E_TEMPLATE=process.env.REACT_APP_EMAIL_TEMPLATE_ID;
@@ -45,19 +46,24 @@ const Form = () => {
     }
   };
   
-  return  <div className="form">
-        <form ref={form} >
-            <label>Your Name</label>
-            <input type="text" name="user_name"></input>
-            <label>Email</label>
-            <input type="email"  name="user_email"></input>
-            <label>Subject</label>
-            <input type="text" name="subject"></input>
-            <label>Message</label>
-            <textarea name="message" rows="6" placeholder="Type your message here" />
-            <button className="btn" onClick={sendEmail}>Submit</button>
-        </form>      
-    </div>;
+  return <section id="contact" className="section"> 
+    <div className="section">
+        <h1>Let's Chat</h1>
+        <div className="form">
+                <form ref={form} >
+                    <label>Your Name</label>
+                    <input type="text" name="user_name"></input>
+                    <label>Email</label>
+                    <input type="email"  name="user_email"></input>
+                    <label>Subject</label>
+                    <input type="text" name="subject"></input>
+                    <label>Message</label>
+                    <textarea name="message" rows="6" placeholder="Type your message here" />
+                    <button className="btn" onClick={sendEmail}>Submit</button>
+                </form>     
+        </div>;
+    </div>
+    </section>
 };
 
 export default Form;

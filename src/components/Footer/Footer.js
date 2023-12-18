@@ -7,7 +7,7 @@ import {FaGithub,
         FaPhone,
         FaFileDownload} 
     from "react-icons/fa";
-import pdf from "../assets/Resume.pdf"
+import pdf from "../../assets/Resume.pdf"
 import React from 'react';
 
 

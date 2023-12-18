@@ -1,8 +1,8 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import HeroImgProj from '../components/HeroImgProj'
-import Work from '../components/Work'
+import React from 'react';
+import Navbar from '../components/Navbar/Navbar2';
+import Footer from '../components/Footer/Footer';
+import HeroImgProj from '../components/HeroImg/HeroImgProj';
+import Work from '../components/WorkCard/Work';
 const Project = () => {
   return (
     <div>

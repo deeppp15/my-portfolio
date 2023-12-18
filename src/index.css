@@ -18,7 +18,9 @@ a{
   color:white;
   text-decoration:none;
 }
-
+.section{
+padding-top: 50px;
+}
 ul{
   list-style-type:none;
 }
