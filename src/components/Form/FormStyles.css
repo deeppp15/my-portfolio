@@ -23,3 +23,9 @@ form input, form textarea{
 form .btn:focus{
  background-color: green;
 }
+
+
+h1{
+    text-align: center;
+
+    }

@@ -1,8 +1,9 @@
 import "./HeroImgStyles.css"
 import React from 'react'
-import IntroImg from "../assets/intro-bg.jpg"
-import {Link} from "react-router-dom"
-import { useTypingEffect } from "../hooks/typing-effect"
+import IntroImg from "../../assets/intro-bg.jpg"
+import { useTypingEffect } from "../../hooks/typing-effect"
+import { NavHashLink  } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 
 const HeroImg = () => {
@@ -18,8 +19,8 @@ const HeroImg = () => {
             <p>Hi, I am a</p>
             <h1> F{myh}</h1>
             <div >
-                <Link to="/my-portfolio/project"  className="btn">Projects </Link>
-                <Link to="/my-portfolio/contact"  className="btn btn-light .btn-hover">Contact</Link>
+                <NavHashLink to="/my-portfolio/#projects" smooth  className="btn">Projects </NavHashLink>
+                <NavHashLink to="/my-portfolio/#contact"  smooth className="btn btn-light .btn-hover">Contact</NavHashLink>
             </div>
         </div>
     </div>

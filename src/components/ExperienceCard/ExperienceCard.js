@@ -1,17 +1,21 @@
 //import { Link } from "react-router-dom";
 import "./ExperienceCard.css";
 import React from 'react';
-import cmpImg from "../assets/company.jpeg";
-import gmuImg from "../assets/gmu.jpg";
-import unimum from "../assets/university_of_Mumbai.jpg";
+import cmpImg from "../../assets/company.jpeg";
+import gmuImg from "../../assets/gmu.jpg";
+import unimum from "../../assets/university_of_Mumbai.jpg";
+import { Reveal } from "../Utils/Reveal.tsx";
 //Divide it into two pars one info and other images slideshow
 function ExperienceCard() {
   return (
     <div className="exp">
-        <h1 className="exp-heading">Experience</h1>
+        
+        <h1 style={{ textAlign: 'center' }}className="exp-heading">Experience</h1>
+        
+        
         <div className="card-container">
            
-           
+        <Reveal> 
         <div className="card" >
                 <div className="card-child ">
                 <h2>George Mason University</h2>
@@ -31,16 +35,16 @@ function ExperienceCard() {
          
                 </div>
                 <div className="card-child">
-                    <img className="card-img"src={gmuImg} alt="Company Logo" />
+                    <img className="card-img"src={gmuImg}  alt="George Mason University Logo" />
                 </div>
             </div>
            
-           
-           
-           
+            </Reveal>
+
+            <Reveal> 
             <div className="card" >
                 <div className="card-child">
-                    <img  className="card-img" src={cmpImg} alt="Company Logo" />
+                    <img  className="card-img" src={cmpImg} alt="Bitwise Pvt Limited Logo" />
                 </div>
 
                 <div className="card-child">
@@ -65,8 +69,9 @@ function ExperienceCard() {
          
                 </div>
             </div>
-
-
+            </Reveal>
+            
+            <Reveal> 
             <div className="card" >
                 <div className="card-child">
                 <h2>University Of Mumbai</h2>
@@ -90,12 +95,13 @@ function ExperienceCard() {
          
                 </div>
                 <div className="card-child">
-                    <img  className="card-img" src={unimum} alt="Company Logo" />
+                    <img  className="card-img" src={unimum} alt="University of Mumbai Logo" />
                 </div>
             </div>
-
+            </Reveal>
 
         </div>
+        
     </div>
   )
 };

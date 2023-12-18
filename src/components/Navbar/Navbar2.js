@@ -1,20 +1,20 @@
-import { Link } from "react-router-dom";
 import "./NavbarStyles.css";
 import {FaBars,FaTimes } from "react-icons/fa";
 import React,{ useState } from 'react';
-;
-//  Portfolio header to go to home
-// Creating the navbar here 
+import { NavHashLink  } from "react-router-hash-link";
+
+
 const Navbar = () => {
     
     const[click,setClick]= useState(false);
+    const[color, setColor]=useState(false);
+
     const handleClick = () => {
         console.log("click value is :- ", click);
         setClick(!click);
     };
 
 
-    const[color, setColor]=useState(false);
     const changeColor = () => {
         if(window.scrollY >= 100 ){
             setColor(true);
@@ -22,25 +22,28 @@ const Navbar = () => {
             setColor(false);
         }
     };
-
     window.addEventListener("scroll",changeColor);
+
+
+
   return (
+    <section id="home">
     <div className={color  ? "header header-bg":"header"}>
-        <Link to="/my-portfolio">
+        <NavHashLink to="/my-portfolio/">
             <h1>Deep Vora</h1>         
-            </Link>
+            </NavHashLink>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-                <li>
-                    <Link to="/my-portfolio">Home</Link>
+                <li >
+                    <NavHashLink to="#home" smooth>Home</NavHashLink>
                 </li>
                 <li>
-                    <Link to="/my-portfolio/project">Project</Link>
+                    <NavHashLink to="/my-portfolio/#projects" smooth>Projects</NavHashLink>
                 </li>
-                <li>
-                    <Link to="/my-portfolio/about">About</Link>
+                <li >
+                    <NavHashLink  to="#about"  smooth>About</NavHashLink>
                 </li>
-                <li>
-                    <Link to="/my-portfolio/contact">Contact</Link>
+                <li >
+                    <NavHashLink to="#contact" smooth>Contact</NavHashLink>
                 </li>
             </ul>
             <div className="hamburger" onClick={handleClick}>
@@ -48,6 +51,7 @@ const Navbar = () => {
             (<FaBars size={20} style={{ color: "#fff" }} />)}
             </div>
         </div>
+        </section>
   )
 }
 

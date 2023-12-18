@@ -1,4 +1,4 @@
-import dataMiningImg from "../assets/dataMining.png";
+import dataMiningImg from "../../assets/dataMining.png";
 
 const DataMiningContent=[
     {

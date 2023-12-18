@@ -1,21 +1,23 @@
-import "./WorkCardStyles.css"
+import "./WorkCardStyles.css";
 
-import React from 'react'
+import React from 'react';
 
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { Reveal } from "../Utils/Reveal.tsx";
+
 const WorkCard =(props) =>{
   return (
-        <div className="project-card">
+    <Link to={props.view}>
+      <Reveal>
+        <div className="project-card"> 
           <img className="project-img" src={props.imgsrc} alt="image" />
             <h2 className="project-title">{props.title}</h2>
               <div className="pro-details">
                 <p>{props.text}</p>
-                  <div className="pro-btns">
-                    <Link to={props.view}
-                    className="btn">View</Link>
-                    </div>
                 </div>
             </div>
+            </Reveal>
+            </Link>
   )
 }
 

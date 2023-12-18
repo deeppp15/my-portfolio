@@ -14,8 +14,7 @@ function App() {
   return (
    <>
    <Routes> /** Specifying routes for all pages  */
-    <Route path="/my-portfolio" element={<Home />} />/** Add address and path  */
-    <Route path="/my-portfolio/project" element={<Project />} />/** Add address and path  */
+    <Route path="/my-portfolio/" element={<Home />} />/** Add address and path  */
     <Route path="/my-portfolio/about" element={<About />} />/** Add address and path  */
     <Route path="/my-portfolio/contact" element={<Contact />} />/** Add address and path  */
     <Route path="/my-portfolio/dataMining" element={<DataMining />} />

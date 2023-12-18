@@ -1,16 +1,16 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import HeroImgProj from '../components/HeroImgProj'
-import  Form  from '../components/Form'
+import Navbar from '../components/Navbar/Navbar2'
+import Footer from '../components/Footer/Footer'
+import HeroImgProj from '../components/HeroImg/HeroImgProj'
+import  Form  from '../components/Form/Form'
 
 const Contact = () => {
   return (
     <div>
       <Navbar/>
-      <HeroImgProj heading="Contact" text="Let's have a chat."/>
+      {/* <HeroImgProj heading="Contact" text="Let's have a chat."/> */}
       <Form/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }
