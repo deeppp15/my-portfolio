@@ -5,7 +5,8 @@ import {FaGithub,
         FaLinkedin, 
         FaMailBulk, 
         FaPhone,
-        FaFileDownload} 
+        FaFileDownload
+    } 
     from "react-icons/fa";
 import pdf from "../../assets/Resume.pdf"
 import React from 'react';
@@ -39,7 +40,6 @@ function Footer() {
                 </h4>
             </div>
         </div>
-
 
 
         <div className="right">

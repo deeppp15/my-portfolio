@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from "react-router-dom" ;
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import {Helmet} from 'react-helmet';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const TITLE = 'Deep Vora';
