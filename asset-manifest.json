@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.8a8c6781.css",
-    "main.js": "/my-portfolio/static/js/main.9fa2996e.js",
+    "main.css": "/my-portfolio/static/css/main.82c4d606.css",
+    "main.js": "/my-portfolio/static/js/main.871855c8.js",
     "static/media/intro-bg.jpg": "/my-portfolio/static/media/intro-bg.4a535b37d5d256792517.jpg",
+    "static/media/onlineboookstore.png": "/my-portfolio/static/media/onlineboookstore.d86702a36013f340bea1.png",
     "static/media/me.jpeg": "/my-portfolio/static/media/me.c8e6c68f741d6e4df4e6.jpeg",
     "static/media/gmu.jpg": "/my-portfolio/static/media/gmu.c49aa8a8864632ce1d8a.jpg",
     "static/media/dataMining.png": "/my-portfolio/static/media/dataMining.d3e24086f0c49c7d359c.png",
@@ -11,13 +12,14 @@
     "static/media/gmu.jpeg": "/my-portfolio/static/media/gmu.8e8a274ef22336f2d12e.jpeg",
     "static/media/university_of_Mumbai.jpg": "/my-portfolio/static/media/university_of_Mumbai.7ffed7131554f25b730f.jpg",
     "static/media/Resume.pdf": "/my-portfolio/static/media/Resume.730ec9fd81ac6228d5d1.pdf",
+    "static/media/MapReduce.png": "/my-portfolio/static/media/MapReduce.009237638d36ebeae748.png",
     "static/media/monopoly.avif": "/my-portfolio/static/media/monopoly.2f9ec8f6eaee0d0d190d.avif",
     "index.html": "/my-portfolio/index.html",
-    "main.8a8c6781.css.map": "/my-portfolio/static/css/main.8a8c6781.css.map",
-    "main.9fa2996e.js.map": "/my-portfolio/static/js/main.9fa2996e.js.map"
+    "main.82c4d606.css.map": "/my-portfolio/static/css/main.82c4d606.css.map",
+    "main.871855c8.js.map": "/my-portfolio/static/js/main.871855c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a8c6781.css",
-    "static/js/main.9fa2996e.js"
+    "static/css/main.82c4d606.css",
+    "static/js/main.871855c8.js"
   ]
 }
