@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./NavbarStyles.css";
 import {FaBars,FaTimes } from "react-icons/fa";
 import React,{ useState } from 'react';
@@ -10,7 +11,7 @@ const Navbar = () => {
     const[color, setColor]=useState(false);
 
     const handleClick = () => {
-        console.log("click value is :- ", click);
+        //console.log("click value is :- ", click);
         setClick(!click);
     };
 
@@ -29,15 +30,15 @@ const Navbar = () => {
   return (
     <section id="home">
     <div className={color  ? "header header-bg":"header"}>
-        <NavHashLink to="/my-portfolio/">
+        <NavLink to="/my-portfolio/#home">
             <h1>Deep Vora</h1>         
-            </NavHashLink>
+            </NavLink>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li >
                     <NavHashLink to="#home" smooth>Home</NavHashLink>
                 </li>
                 <li>
-                    <NavHashLink to="/my-portfolio/#projects" smooth>Projects</NavHashLink>
+                    <NavHashLink to="#projects" smooth>Projects</NavHashLink>
                 </li>
                 <li >
                     <NavHashLink  to="#about"  smooth>About</NavHashLink>

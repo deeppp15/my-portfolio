@@ -10,7 +10,7 @@ const Navbar = () => {
     const[color, setColor]=useState(false);
 
     const handleClick = () => {
-        console.log("click value is :- ", click);
+        //console.log("click value is :- ", click);
         setClick(!click);
     };
 
@@ -24,10 +24,11 @@ const Navbar = () => {
     };
     window.addEventListener("scroll",changeColor);
 
-
+    const navlinks=document.querySelectorAll('.navlink');
+    
 
   return (
-    <section id="home">
+    <section id="home" >
     <div className={color  ? "header header-bg":"header"}>
         <NavHashLink to="/my-portfolio/#home">
             <h1>Deep Vora</h1>         

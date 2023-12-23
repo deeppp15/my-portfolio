@@ -4,7 +4,6 @@ import "./DataMiningMainStyle.css"
 
 import DataMiningCard from "./DataMiningCard";
 import DataMiningContent from "./DataMiningContent";
-import { NavHashLink } from 'react-router-hash-link';
 import { useEffect } from 'react';
 
 const DataMiningMain =(props) =>{
