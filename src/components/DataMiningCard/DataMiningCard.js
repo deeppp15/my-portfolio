@@ -9,7 +9,7 @@ const DataMiningCard  =(props) =>{
           <div className="data-card"> 
          
             <img className="data-img" src={props.imgsrc} alt="image" />
-              <h2 className="data-title">{props.title}&emsp;<FaExternalLinkAlt></FaExternalLinkAlt></h2>
+              <h2 className="data-title">{props.title}&emsp;<FaExternalLinkAlt size={15}></FaExternalLinkAlt></h2>
                 <div className="data-details">
                   <p>{props.text}</p>
                     <div className="data-btns">

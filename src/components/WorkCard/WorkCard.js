@@ -13,8 +13,7 @@ const WorkCard =(props) =>{
         <div className="project-card"> 
           <img className="project-img" src={props.imgsrc} alt="image" />
             <h2 className="project-title">   {props.title}&emsp;
-               
-                {props.title !== 'Data Mining Basics' && <FaExternalLinkAlt />}
+                {props.title !== 'Data Mining Basics' && <FaExternalLinkAlt size={15} />}
               </h2>
               <div className="pro-details">
                 <p>{props.text}</p>
