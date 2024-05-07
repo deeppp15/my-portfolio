@@ -1,26 +1,27 @@
 import "./index.css";
 import Home from "./routes/Home";
 import About from "./routes/About";
-import Project from "./routes/Project";
 import Contact from "./routes/Contact";
 import DataMining  from "./routes/DataMining";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 //Parent file of Project
 //Call all pages here 
 //Create pages in routes
 //After that create components eg this nav bar, project setion, contact about section component folder
 function App() {
+  const location = useLocation();
   return (
    <>
-   <Routes> /** Specifying routes for all pages  */
-    <Route path="/my-portfolio/" element={<Home />} />/** Add address and path  */
-    <Route path="/my-portfolio/about" element={<About />} />/** Add address and path  */
-    <Route path="/my-portfolio/contact" element={<Contact />} />/** Add address and path  */
-    <Route path="/my-portfolio/dataMining" element={<DataMining />} />
+   <Routes> 
+    <Route path="/my-portfolio/" element={<Home />} />
+    <Route path="/my-portfolio/about" element={<About />} />
+    <Route path="/my-portfolio/contact" element={<Contact />} />
+    <Route path="/my-portfolio/dataMining" element={<DataMining pathname={location.pathname} />} />
    </Routes>
    </>
   );
+
 }
 //rafce
 export default App;
