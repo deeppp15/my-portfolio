@@ -4,33 +4,35 @@
   "private": false,
   "homepage": "https://deeppp15.github.io/my-portfolio/",
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "dotenv": "^16.0.3",
-    "framer-motion": "^10.16.16",
+    "@emailjs/browser": "^4.3.3",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.6",
+    "@testing-library/user-event": "^14.5.2",
+    "dotenv": "^16.4.5",
+    "framer-motion": "^11.1.8",
     "fs": "^0.0.1-security",
+    "latest": "^0.2.0",
     "os": "^0.1.2",
     "path": "^0.12.7",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-confetti": "^6.1.0",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.8.0",
-    "react-in-viewport": "^1.0.0-alpha.30",
-    "react-pdf": "^7.0.3",
-    "react-router-dom": "^6.21.1",
+    "react-icons": "^5.2.1",
+    "react-in-viewport": "^1.0.0-beta.2",
+    "react-intersection-observer": "^9.10.2",
+    "react-pdf": "^8.0.0",
+    "react-router-dom": "^6.23.0",
     "react-router-hash-link": "^2.4.3",
-    "react-scripts": "5.0.1",
-    "sweetalert2": "^11.10.1",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "^5.0.1",
+    "sweetalert2": "^11.6.114",
+    "web-vitals": "^3.5.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "predeploy": "npm --openssl-legacy-provider run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -53,6 +55,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^6.1.1"
   }
 }

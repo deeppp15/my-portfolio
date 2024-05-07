@@ -13,7 +13,7 @@ const AboutContent = ()=> {
       <div className="left">
         <Reveal>
         <h1>Who am I ?</h1>
-        <p>I am a dedicated and enthusiastic individual with a strong foundation in programming languages and a diverse skill set in tools and frameworks. I am eager to leverage my skills and expand my knowledge in the field of computer science. Apart from my technical background you will find me watching re runs of The Office and ocassionally playing Counter Strike - 2 .</p>
+        <p>I am a dedicated and enthusiastic individual with a strong foundation in programming languages and a diverse skill set in tools and frameworks. I am eager to leverage my skills and expand my knowledge in the field of computer science. This portfolio showcases some of the UI/UX Design principles which I have adhered to while developing it. Hope you like it. In case of any suggestions or queries feel free to reach out to me from the below form.</p>
         <Link to="/my-portfolio/#contact">
           {/* <button className="btn">Contact</button> */}
         </Link>
