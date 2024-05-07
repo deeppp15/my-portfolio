@@ -3,6 +3,7 @@ import WorkCard from "./WorkCard";
 import WorkCardData from "./WorkCardData";
 //Get card from WorkCard and Work card will get data from WorkCardData js
 import React from 'react';
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Work =() =>{
   return (

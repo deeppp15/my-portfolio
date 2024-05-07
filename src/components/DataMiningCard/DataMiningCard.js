@@ -1,8 +1,7 @@
 import React from 'react';
-import { NavLink,Link } from "react-router-dom";
-import { Document, Page } from 'react-pdf';
+import { NavLink } from "react-router-dom";
 import { Reveal } from '../Utils/Reveal.tsx';
-import { NavHashLink  } from "react-router-hash-link";
+import {FaExternalLinkAlt} from "react-icons/fa";
 
 const DataMiningCard  =(props) =>{
     return (
@@ -10,7 +9,7 @@ const DataMiningCard  =(props) =>{
           <div className="data-card"> 
          
             <img className="data-img" src={props.imgsrc} alt="image" />
-              <h2 className="data-title">{props.title}</h2>
+              <h2 className="data-title">{props.title}&emsp;<FaExternalLinkAlt></FaExternalLinkAlt></h2>
                 <div className="data-details">
                   <p>{props.text}</p>
                     <div className="data-btns">
