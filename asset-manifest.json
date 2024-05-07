@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.82c4d606.css",
-    "main.js": "/my-portfolio/static/js/main.ece64208.js",
+    "main.css": "/my-portfolio/static/css/main.df30b740.css",
+    "main.js": "/my-portfolio/static/js/main.bd03fe45.js",
     "static/media/intro-bg.jpg": "/my-portfolio/static/media/intro-bg.4a535b37d5d256792517.jpg",
     "static/media/onlineboookstore.png": "/my-portfolio/static/media/onlineboookstore.d86702a36013f340bea1.png",
     "static/media/me.jpeg": "/my-portfolio/static/media/me.c8e6c68f741d6e4df4e6.jpeg",
@@ -10,16 +10,16 @@
     "static/media/company.jpeg": "/my-portfolio/static/media/company.75873a928ed764e739f7.jpeg",
     "static/media/LoyaltyFirst.png": "/my-portfolio/static/media/LoyaltyFirst.a5bdb0a1939ff71cfd39.png",
     "static/media/gmu.jpeg": "/my-portfolio/static/media/gmu.8e8a274ef22336f2d12e.jpeg",
+    "static/media/Resume.pdf": "/my-portfolio/static/media/Resume.74c8ff5567443ad83f28.pdf",
     "static/media/university_of_Mumbai.jpg": "/my-portfolio/static/media/university_of_Mumbai.7ffed7131554f25b730f.jpg",
-    "static/media/Resume.pdf": "/my-portfolio/static/media/Resume.730ec9fd81ac6228d5d1.pdf",
     "static/media/MapReduce.png": "/my-portfolio/static/media/MapReduce.009237638d36ebeae748.png",
     "static/media/monopoly.avif": "/my-portfolio/static/media/monopoly.2f9ec8f6eaee0d0d190d.avif",
     "index.html": "/my-portfolio/index.html",
-    "main.82c4d606.css.map": "/my-portfolio/static/css/main.82c4d606.css.map",
-    "main.ece64208.js.map": "/my-portfolio/static/js/main.ece64208.js.map"
+    "main.df30b740.css.map": "/my-portfolio/static/css/main.df30b740.css.map",
+    "main.bd03fe45.js.map": "/my-portfolio/static/js/main.bd03fe45.js.map"
   },
   "entrypoints": [
-    "static/css/main.82c4d606.css",
-    "static/js/main.ece64208.js"
+    "static/css/main.df30b740.css",
+    "static/js/main.bd03fe45.js"
   ]
 }
