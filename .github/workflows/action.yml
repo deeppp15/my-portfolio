@@ -19,9 +19,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build and deploy
-        
-      run: |
-        # Use environment files instead of echo
-        echo "REACT_APP_SERVICE_NAME=$REACT_APP_SERVICE_NAME" >> $GITHUB_ENV
-        echo "REACT_APP_EMAIL_TEMPLATE_ID=$REACT_APP_EMAIL_TEMPLATE_ID" >> $GITHUB_ENV
-        echo "REACT_APP_PUBLIC_KEY=$REACT_APP_PUBLIC_KEY" >> $GITHUB_ENV
+        run: |
+          # Use environment files instead of echo
+          echo "REACT_APP_SERVICE_NAME=$REACT_APP_SERVICE_NAME" >> $GITHUB_ENV
+          echo "REACT_APP_EMAIL_TEMPLATE_ID=$REACT_APP_EMAIL_TEMPLATE_ID" >> $GITHUB_ENV
+          echo "REACT_APP_PUBLIC_KEY=$REACT_APP_PUBLIC_KEY" >> $GITHUB_ENV
