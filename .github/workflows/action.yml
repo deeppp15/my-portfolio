@@ -12,13 +12,17 @@ jobs:
     steps:
       - name: Email Secrets
         uses: actions/checkout@v2
-      - name: Build and deploy
-        env:
-          REACT_APP_SERVICE_NAME: ${{ secrets.REACT_APP_SERVICE_NAME }}
-          REACT_APP_EMAIL_TEMPLATE_ID: ${{ secrets.REACT_APP_EMAIL_TEMPLATE_ID }}
-          REACT_APP_PUBLIC_KEY: ${{ secrets.REACT_APP_PUBLIC_KEY }}
+
+      - name: Set up environment variables
         run: |
-          # Here, you can use the secrets as environment variables
+          #Here chat I am creatiung a env file at runtime to store them values.
+          echo "REACT_APP_SERVICE_NAME=${{ secrets.REACT_APP_SERVICE_NAME }}" >> .env
+          echo "REACT_APP_EMAIL_TEMPLATE_ID=${{ secrets.REACT_APP_EMAIL_TEMPLATE_ID }}" >> .env
+          echo "REACT_APP_PUBLIC_KEY=${{ secrets.REACT_APP_PUBLIC_KEY }}" >> .env
+
+      - name: Build and deploy
+        run: |
+          # Using the env variables in the react app
           echo $REACT_APP_SERVICE_NAME
           echo $REACT_APP_EMAIL_TEMPLATE_ID
           echo $REACT_APP_PUBLIC_KEY
