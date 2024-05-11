@@ -5,22 +5,20 @@ on:
     branches:
       - main
       - gh-pages
-env:
-  REACT_APP_EMAIL_TEMPLATE_ID: ${{ secrets.REACT_APP_EMAIL_TEMPLATE_ID }}
-  REACT_APP_PUBLIC_KEY: ${{ secrets.REACT_APP_PUBLIC_KEY }}
-  REACT_APP_SERVICE_NAME: ${{ secrets.REACT_APP_SERVICE_NAME }}
   
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Email Secrets
         uses: actions/checkout@v2
-
       - name: Build and deploy
+        env:
+          REACT_APP_SERVICE_NAME: ${{ secrets.REACT_APP_SERVICE_NAME }}
+          REACT_APP_EMAIL_TEMPLATE_ID: ${{ secrets.REACT_APP_EMAIL_TEMPLATE_ID }}
+          REACT_APP_PUBLIC_KEY: ${{ secrets.REACT_APP_PUBLIC_KEY }}
         run: |
-          # Use environment files instead of echo
-          echo "REACT_APP_SERVICE_NAME=$REACT_APP_SERVICE_NAME" >> $GITHUB_ENV
-          echo "REACT_APP_EMAIL_TEMPLATE_ID=$REACT_APP_EMAIL_TEMPLATE_ID" >> $GITHUB_ENV
-          echo "REACT_APP_PUBLIC_KEY=$REACT_APP_PUBLIC_KEY" >> $GITHUB_ENV
+          # Here, you can use the secrets as environment variables
+          echo $REACT_APP_SERVICE_NAME
+          echo $REACT_APP_EMAIL_TEMPLATE_ID
+          echo $REACT_APP_PUBLIC_KEY
