@@ -24,7 +24,7 @@ const Form = () => {
 
     var re= new RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$");
     const email= form.current[1].value;
-    console.log('Email is- ',email);
+    // console.log('Email is- ',email);
     if (!re.test(email)  || email==undefined || email=="" ){
         console.log('Not valid');
         return this;      
@@ -35,12 +35,12 @@ const Form = () => {
     for (let i = 0; i <= 3; i++) {
       if(i==1)continue;
       if(input == "" || input==undefined){
-       console.log('Not valid');
+      //  console.log('Not valid');
         return this;      
       }
     }
     this.validated=true;
-     console.log('Valid or not ',this.validated);
+    //  console.log('Valid or not ',this.validated);
 
    return this;
   }
@@ -48,16 +48,16 @@ const Form = () => {
   //SEND EMAIL FUNCTION
   EMAIL.prototype.sendEmail =  function (e){
     e.preventDefault();
-    console.log("Service : "+SERVICE+", E_Template  "+SERVICE+", P_KEY: "+SERVICE);    
+    // console.log("Service : "+SERVICE+", E_Template  "+SERVICE+", P_KEY: "+SERVICE);    
 
-    console.log('Inside sendEmail');
+    // console.log('Inside sendEmail');
 
     if(form.current && this.validated==true){
     emailjs.sendForm(SERVICE, E_TEMPLATE, form.current, P_KEY)
              .then((result) => {
-                console.log("Emailjs success:", result.text);
+                // console.log("Emailjs success:", result.text);
                 this.emailSent=true;
-               console.log('setting emailSent is', this.emailSent);
+              //  console.log('setting emailSent is', this.emailSent);
                 this.toggleModal(e);
               })
            .catch((error) => {
@@ -66,7 +66,7 @@ const Form = () => {
 
              })
              .finally(() => {
-             console.log("Finally block executed");
+            //  console.log("Finally block executed");
 
             });
     }
@@ -77,7 +77,7 @@ const Form = () => {
   ///Notification Code
   EMAIL.prototype.toggleModal = async function (e){
     e.preventDefault();
-    console.log('togglemodal emailSent is', this.emailSent);
+    // console.log('togglemodal emailSent is', this.emailSent);
     let title,text,icon;
     if (this.emailSent) {
       title= "Success";
@@ -96,13 +96,13 @@ const Form = () => {
       confirmButtonColor: "rgb(248, 217, 15)",
       timer: 10000
     }).then(()=>{
-      console.log('showed success box');
+      // console.log('showed success box');
      
-        console.log('Ok button clicked');
+        // console.log('Ok button clicked');
         window.location.href = "/my-portfolio/";
 
     }).catch(()=>{
-      console.log("Some error in popup dawg");
+      // console.log("Some error in popup dawg");
     });
 
     this.emailSent=false;
