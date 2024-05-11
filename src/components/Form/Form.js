@@ -45,10 +45,10 @@ const Form = () => {
    return this;
   }
   
-    console.log(process.env.REACT);    
   //SEND EMAIL FUNCTION
   EMAIL.prototype.sendEmail =  function (e){
     e.preventDefault();
+    console.log("Service : "+SERVICE+", E_Template  "+SERVICE+", P_KEY: "+SERVICE);    
 
     console.log('Inside sendEmail');
 
@@ -98,7 +98,7 @@ const Form = () => {
     }).then(()=>{
       console.log('showed success box');
      
-        //console.log('Ok button clicked');
+        console.log('Ok button clicked');
         window.location.href = "/my-portfolio/";
 
     }).catch(()=>{
