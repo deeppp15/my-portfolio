@@ -23,27 +23,27 @@ const Navbar = () => {
         }
     };
     window.addEventListener("scroll",changeColor);
-
-    const navlinks=document.querySelectorAll('.navlink');
+    
     
 
+    
   return (
     <section id="home" >
     <div className={color  ? "header header-bg":"header"}>
-        <NavHashLink to="/my-portfolio/#home">
+        <NavHashLink to="/my-portfolio/#home" smooth>
             <h1>Deep Vora</h1>         
             </NavHashLink>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-                <li >
+                <li>
                     <NavHashLink to="/my-portfolio/#home" smooth className={".navlink"} >Home</NavHashLink>
                 </li>
                 <li>
                     <NavHashLink to="/my-portfolio/#projects" smooth className={".navlink"}>Projects</NavHashLink>
                 </li>
-                <li >
+                <li>
                     <NavHashLink  to="/my-portfolio/#about"  smooth className={".navlink"}>About</NavHashLink>
                 </li>
-                <li >
+                <li>
                     <NavHashLink to="/my-portfolio/#contact" smooth className={".navlink"}>Contact</NavHashLink>
                 </li>
             </ul>

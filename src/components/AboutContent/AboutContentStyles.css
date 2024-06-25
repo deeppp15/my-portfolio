@@ -40,6 +40,8 @@
  .right .img{
     max-width: 90%;
     border: 1px solid #333;
+    border-radius: 8px;
+
  }
 
  .right .top{

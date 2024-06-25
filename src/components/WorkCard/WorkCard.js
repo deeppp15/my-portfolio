@@ -19,9 +19,9 @@ const WorkCard =(props) =>{
                 <p>{props.text}</p>
                 </div>
             </div>
-            </Reveal>
-            </Link>
+        </Reveal>
+    </Link>
   )
 }
 
-export default WorkCard
+export default WorkCard;

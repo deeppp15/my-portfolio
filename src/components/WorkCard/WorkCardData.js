@@ -3,7 +3,7 @@ import monopolyImg from "../../assets/monopoly.avif";
 import loyaltyFirst from "../../assets/LoyaltyFirst.png";
 import bookstore from "../../assets/onlineboookstore.png";
 import heartprediction from "../../assets/MapReduce.png";
-
+import embedded from "../../assets/embedded.jpg";
 const ProjectCardData=[
     {
         imgsrc:dataMiningImg,
@@ -34,6 +34,12 @@ const ProjectCardData=[
         title:"Heart Attack and Kidney faliure Prediction",
         text:"A project developed to demonstrate distributed machine learning computing on pyspark. This project takes in 10 years of CDC Dataset, applies random forest and reports back F1 scores for the same.",
         view:"https://www.kaggle.com/code/prisionmike15/bfrs-dataset-chronic-disease-predictions"
+    },
+    {
+        imgsrc:embedded,
+        title:"A Real Time Beer Keg Status Monitor",
+        text:"A project developed to demonstrate C programming in real time, dealing with thrads, concurrency, RTOS, RMS, BeagleBone and I2C, SPI Bus Communication Protocols.",
+        view:"https://github.com/deeppp15/Beer-Keg-Status-Monitor/"
     }
 ];
 

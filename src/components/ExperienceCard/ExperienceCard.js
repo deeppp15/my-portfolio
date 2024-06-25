@@ -1,7 +1,7 @@
 //import { Link } from "react-router-dom";
 import "./ExperienceCard.css";
 import React from 'react';
-import cmpImg from "../../assets/company.jpeg";
+import cmpImg from "../../assets/company.jpg";
 import gmuImg from "../../assets/gmu.jpg";
 import unimum from "../../assets/university_of_Mumbai.jpg";
 import { Reveal } from "../Utils/Reveal.tsx";
@@ -20,18 +20,20 @@ function ExperienceCard() {
                 <div className="card-child ">
                 <h2>George Mason University</h2>
                 
-                <p className="date">August, 2022 - Present</p>
+                <p className="date">August, 2022 - May, 2024</p>
                 <p className="title">Masters in Computer Science</p>
             
-                    <div className="points">
-                        <p>I am currently pursuing my Master's degree in Computer Science from George Mason University, USA. In this program, I have had the opportunity to delve into advanced subjects such as data mining, analysis of algorithms, database management, and secure software design. </p>
-                    </div>
-                    <div className="points">
-                        <p>The curriculum has not only enhanced my technical skills but has also nurtured my ability to think critically and solve complex problems. Collaborating with diverse peers and experienced professors has provided me with valuable insights and a stimulating learning environment.</p>
-                    </div>
-                    <div className="points">
-                        <p>My journey at George Mason University has further fueled my passion for pushing the boundaries of technology and making meaningful contributions to the field of computer science.</p>
-                    </div>
+                <div className="points">
+                    <p>In this program, I have had the opportunity to delve into advanced subjects such as -   
+                        Database Design, Theory and Application of Data Mining, User Interface Design/Development, Mining Massive Datasets using MapReduce, Secure Software Engineering, Analysis of Algorithms, Object-Oriented Specification and Construction, and Computer and Systems Programming.</p>
+                </div>
+                <div className="points">
+                    <p>The curriculum has not only enhanced my technical skills but has also nurtured my ability to think critically and solve complex problems. Collaborating with diverse peers and experienced professors has provided me with valuable insights and a stimulating learning environment.</p>
+                </div>
+                <div className="points">
+                    <p>My journey at George Mason University has further fueled my passion for pushing the boundaries of technology and making meaningful contributions to the field of computer science.</p>
+                </div>
+
          
                 </div>
                 <div className="card-child">
@@ -51,21 +53,27 @@ function ExperienceCard() {
                 <h2>Bitwise Pvt Limited</h2>
                 
                 <p className="date">Feb, 2021 - Aug, 2023</p>
-                <p className="title">Software Developer</p>
+                <p className="title">Software Development Engineer</p>
             
                     <div className="points">
-                        <p>Owned external customer web portal, including development cycle, 
-                        unit testing, and code reviews.</p>
+                    <p>Enhanced system reliability and fault tolerance by designing and developing robust retry mechanisms across 50 microservices which led to a reduction of defects by 48%.</p>
                     </div>
                     <div className="points">
-                        <p>Development and maintenance of REST endpoints and UI of web portal, enabling self-service for our 
-                        customer for onboarding and platform administration.</p>
+                    <p>Automated data extraction, analysis, and purging for top financial service clients and banking systems; reduced manual labor by up to 85%.</p>
                     </div>
                     <div className="points">
-                        <p>Developed and maintained APIs across the remainder of our products, working within a larger team 
-                        development cycle and participated in regular architecture and scoping meetings, for new product
-                        development.</p>
+                    <p>Optimized operational efficiency by implementing batch processing jobs, resulting in significant latency reduction.</p>
                     </div>
+                    <div className="points">
+                    <p>Subject Matter Expert (SME) for dispute management service, automation, and scaling systems.</p>
+                    </div>
+                    <div className="points">
+                    <p>Automated integration testing by delivering mock transaction and validation systems.</p>
+                    </div>
+                    <div className="points">
+                    <p>Maintained web applications by troubleshooting bugs, releasing features, and enhancing overall system functionality.</p>
+                    </div>
+
          
                 </div>
             </div>

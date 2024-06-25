@@ -13,13 +13,13 @@ const AboutContent = ()=> {
       <div className="left">
         <Reveal>
         <h1>Who am I ?</h1>
-        <p>I am a dedicated and enthusiastic individual with a strong foundation in programming languages and a diverse skill set in tools and frameworks. I am eager to leverage my skills and expand my knowledge in the field of computer science. This portfolio showcases some of the UI/UX Design principles which I have adhered to while developing it. Hope you like it. In case of any suggestions or queries feel free to reach out to me from the below form.</p>
+        <p>Hello! My name is Deep Vora, and I am passionate about pushing the boundaries of technology and making meaningful contributions to the field of computer science. Beyond my professional work, I have contributed to the field through papers on Reinforcement Learning using Neural Networks and Inter-vehicular Networking in Real-Time Systems.</p>
         <Link to="/my-portfolio/#contact">
           {/* <button className="btn">Contact</button> */}
         </Link>
         </Reveal>
       </div>
-      
+
       
       <Reveal>
       <div className="right">

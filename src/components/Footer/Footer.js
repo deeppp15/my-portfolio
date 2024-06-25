@@ -44,7 +44,7 @@ function Footer() {
 
         <div className="right">
                 <h4> About myself </h4>
-                <p> I am a Computer Science Student studying in george mason university.</p>
+                <p> A recent CS grad with deep passion for technology and its potential to solve complex problems.</p>
                 <div className="social">
                 <a href="https://www.hackerrank.com/voradeep15/">
                     <FaHackerrank size={30} style={{

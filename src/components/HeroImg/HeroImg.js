@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const HeroImg = () => {
     
-    const myh = useTypingEffect("omputer Science Grad.", 100);
+    const myh = useTypingEffect("oftware Developer.", 100);
   return <div className='hero'>
         <div className="mask">
             <img className="into-img"
@@ -17,7 +17,7 @@ const HeroImg = () => {
         
         <div className="content">
             <p>Hi, I am a</p>
-            <h1> C{myh}</h1>
+            <h1> S{myh}</h1>
             <div >
                 <NavHashLink to="/my-portfolio/#projects" smooth  className="btn">Projects </NavHashLink>
                 <NavHashLink to="/my-portfolio/#contact"  smooth className="btn btn-light .btn-hover">Contact</NavHashLink>

@@ -14,17 +14,15 @@
 }
 
 li {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    float: left;
-    position: relative;
-    padding: 10px 20px;
-    overflow: hidden;
-  }
+font-family: 'Poppins', sans-serif;
+font-weight: bold;
+float: left;
+position: relative;
+padding: 10px 20px;
+overflow: hidden;
+}
 
-
-  
-  li::after {
+li::after {
     background-color:rgb(248,217,15);
     content: "";
     width: 0;
@@ -33,17 +31,24 @@ li {
     bottom: 0;
     transition: width 0.35s ease 0s;
     position:absolute;
-  }
+}
   
-  li:hover::after {
+li:hover::after,
+li:active::after{
     width: 100%;
-  }
-  
-  ul {
+}
+
+li.clicked::after {
+    width: 100%;
+    background-color:rgb(248,217,15);
+}
+
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
+
 .nav-menu{
     display: flex;
 }

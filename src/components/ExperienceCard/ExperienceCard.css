@@ -115,7 +115,8 @@ ul {
         height:35rem;
         opacity: 1;
         object-fit:fill; 
-   
+        border-radius: 8px;
+
 }
 
 

@@ -3,6 +3,21 @@
     padding: 4rem 0 2rem 0;
 }
 
+.the-heading {
+    display: flex;
+    padding: 6rem 0 2rem 0;
+
+  }
+  .the-heading a {
+    padding: 0 2rem; /* Add padding on the left and right */
+    margin-left: 200px; /* Align to the left by pushing to the farthest right */
+      }  
+
+      .the-heading h1{
+        justify-content: center; /* Horizontally center items */
+    align-items: center; /* Vertically center items */
+        margin-left: 360px; /* Align to the left by pushing to the farthest right */
+    }  
 .data-img{
     width: 100%;
     height: 200px;
@@ -52,7 +67,7 @@
     justify-content: space-between;
     padding: 0.5rem 0;
   
-}
+}  
 
 .pro-btns .btn{
     position: static;

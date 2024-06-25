@@ -11,7 +11,6 @@ const Navbar = () => {
     const[color, setColor]=useState(false);
 
     const handleClick = () => {
-        //console.log("click value is :- ", click);
         setClick(!click);
     };
 
@@ -25,16 +24,35 @@ const Navbar = () => {
     };
     window.addEventListener("scroll",changeColor);
 
-
-
+    //Chaning NavLink Col      
+        const handleHashChange = () => {
+            const currLink= window.location.hash.substring(1);
+            document.querySelectorAll('li').forEach(item => {
+                    const href= item.querySelector('a').getAttribute('href');
+                    const hashValue = href.substring(href.indexOf('#')+1); // Gets '#contact'
+                    console.log("Hash:-"+hashValue+",curr:"+currLink+",condition- "+href.match(currLink));
+                    if(href.match(currLink) && currLink)  {
+                        item.classList.add('clicked');
+                    }else{
+                        item.classList.remove('clicked');
+                    }
+              });        
+        };
+      
+        window.addEventListener('hashchange', handleHashChange);
+      
+        // Initial call to set the correct class on page load
+        handleHashChange();
+      
+        
   return (
     <section id="home">
     <div className={color  ? "header header-bg":"header"}>
-        <NavLink to="/my-portfolio/#home">
+        <NavHashLink to="#home" smooth>
             <h1>Deep Vora</h1>         
-            </NavLink>
+            </NavHashLink>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
-                <li >
+                <li>
                     <NavHashLink to="#home" smooth>Home</NavHashLink>
                 </li>
                 <li>
