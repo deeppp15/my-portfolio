@@ -13,9 +13,9 @@ const DataMiningCard  =(props) =>{
                 <div className="data-details">
                   <p>{props.text}</p>
                     <div className="data-btns">
-                      <NavLink to={props.report} 
+                      <NavLink to={props.report}  target="_blank" rel="noopener noreferrer"  
                       className="btn">report</NavLink >
-                      <NavLink to={props.src} 
+                      <NavLink to={props.src} target="_blank" rel="noopener noreferrer"  
                       className="btn">Source</NavLink>
                       </div>
                   </div>
