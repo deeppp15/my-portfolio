@@ -12,14 +12,14 @@ import { Route, Routes, useLocation } from "react-router-dom";
 function App() {
   const location = useLocation();
   return (
-   <>
+   <div className="parallex">
    <Routes> 
     <Route path="/my-portfolio/" element={<Home />} />
     <Route path="/my-portfolio/about" element={<About />} />
     <Route path="/my-portfolio/contact" element={<Contact />} />
     <Route path="/my-portfolio/dataMining" element={<DataMining pathname={location.pathname} />} />
    </Routes>
-   </>
+   </div>
   );
 
 }
