@@ -4,7 +4,15 @@ import loyaltyFirst from "../../assets/LoyaltyFirst.png";
 import bookstore from "../../assets/onlineboookstore.png";
 import heartprediction from "../../assets/MapReduce.png";
 import embedded from "../../assets/embedded.jpg";
+import aws from "../../assets/aws.png";
+
 const ProjectCardData=[
+    {
+        imgsrc:aws,
+        title:"Fullstack Application",
+        text:"A Fullstack application with React as Front end, Springboot for backend. Deployed on CDN with private bucket and container running on EC2 private subnet with NAT Gateway on AWS.",
+        view:"https://github.com/deeppp15/FetchBackend"
+    },
     {
         imgsrc:dataMiningImg,
         title:"Data Mining Basics",
